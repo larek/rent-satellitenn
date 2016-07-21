@@ -1,0 +1,7 @@
+/assets/*
+
+# db connection
+/basic/config/db.php
+
+# uploads file
+/uploads
