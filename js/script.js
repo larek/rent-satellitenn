@@ -25,4 +25,6 @@ $(document).ready(function(){
 		$(this).addClass('btn-primary');
 		$(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
 	});
+
+	$('.input-daterange').datepicker({});
 });

@@ -18,6 +18,44 @@ $this->params['breadcrumbs'][] = $this->title;
 	</div>
 
 
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Условия аренды</h4>
+      </div>
+      <div class="modal-body">
+        	
+				<ul class="list-group">
+				<li class="list-group-item">Оборудование предоставляется в аренду под залог денежных средств.</li>
+				<li class="list-group-item">Плата за аренду взимается до начала использования оборудования исходя из предполагаемого срока аренды.</li>
+				<li class="list-group-item">Расчет количества дней аренды производится следующим способом: количество календарных дней, которое оборудование находилось у клиента, плюс день установки оборудования. День возврата при этом не учитывается.</li>
+				<li class="list-group-item">При аренде оборудования на срок до 5 дней, стоимость аренды равна сумме аренды за 5 дней.</li>
+				<li class="list-group-item">При первом сеансе аренды взимается залог в размере 5000 рублей. При повторном обращении залоговая стоимость не взимается.</li>
+				<li class="list-group-item">В случае возврата оборудования раньше оговоренной даты, перерасчет стоимости аренды по фактическому количеству дней аренды не производится, за исключением случаев, когда условия досрочного возврата были оговорены отдельно.</li>
+				<li class="list-group-item">Возврат оборудования позже оговоренной даты допускается только при условии согласования изменения даты по телефону или любым другим способом.</li>
+				<li class="list-group-item">В случае возврата оборудования позже оговоренной даты, производится перерасчет стоимости аренды по фактическому количеству дней аренды. Стоимость каждых последующих суток аренды остается неизменной.</li>
+				<li class="list-group-item">При повреждении оборудования, в результате которого не возможна его дальнейшая безопасная эксплуатация, из суммы залога будет удержана стоимость восстановительного ремонта и поврежденных деталей.</li>
+				<li class="list-group-item">В случае повреждения оборудования, в результате которого невозможен восстановительный ремонт или невозврата оборудования, арендатор обязуется оплатить разницу между фактической розничной стоимостью оборудования, указанной в договоре аренды, и суммой залога.</li>
+				<li class="list-group-item">Часы работы проката с 10:00 до 19:00. Прием и выдача оборудования в нерабочие часы производится только по предварительной договоренности.</li>
+				</ul>
+			
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
      <div id="loginbox" style="margin-top:50px;" class="col-md-12 ">                    
             <div class="panel panel-primary" >
                     <div class="panel-heading">
@@ -178,6 +216,16 @@ $this->params['breadcrumbs'][] = $this->title;
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
                                         <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Марка, модель и год выпуска автомобиля">                                        
+                            </div>
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                                                                               
+                            		<div class="input-daterange input-group" id="datepicker">
+    <input type="text" class="input-sm form-control" name="start" />
+    <span class="input-group-addon">to</span>
+    <input type="text" class="input-sm form-control" name="end" />
+</div>
                             </div>
                                 
                             
