@@ -89,3 +89,20 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+.color{
+    border: 1px solid silver;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.color-silver{background:silver;}
+.color-white{background:white;}
+.color-black{background:black;}
+
+.color-img-wrapper{
+    height:150px;
+    padding:10px;
+}
