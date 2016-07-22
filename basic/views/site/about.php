@@ -332,7 +332,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                        <input id="login-username" type="text" class="form-control" name="username" value="" inputmode="numeric" placeholder="Телефон">                                        
+                                        <input id="login-username" type="tel" class="form-control" name="username" value=""  placeholder="Телефон">                                        
                             </div>
 
                             <div style="margin-bottom: 25px" class="input-group">
