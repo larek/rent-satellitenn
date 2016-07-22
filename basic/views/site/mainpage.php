@@ -301,19 +301,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
     	<div class="col-md-6">
-    		<div class="col-md-4">
+    		<div class="col-md-4 col-sm-4 col-xs-4">
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
-    		<div class="col-md-8">
+    		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Штатное место</h4>
     			<span class='btn btn-default btn-place'>Выбрать</span>
     		</div>
     	</div>
-    	    	<div class="col-md-6">
-    		<div class="col-md-4">
+    	   <div class="col-md-6">
+    		<div class="col-md-4 col-sm-4 col-xs-4">
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
-    		<div class="col-md-8">
+    		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Рейлинг</h4>
     			<span class='btn btn-default btn-place'>Выбрать</span>
     		</div>
