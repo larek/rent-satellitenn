@@ -25,17 +25,15 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'Satellite',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    
-    NavBar::end();
-    ?>
+<nav id="w0" class="navbar-inverse navbar-fixed-top navbar">
+    <div class="container">
+        <div class="navbar-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button><a class="navbar-brand" href="/index.php">Satellite</a></div>
+        
+    </div>
+</nav>
 
     <div class="container">
         <?//= Breadcrumbs::widget([

@@ -21,9 +21,11 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'bower_components/font-awesome/css/font-awesome.min.css',
         'bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css',
+        'bower_components/fotorama/fotorama.css'
     ];
     public $js = [
         'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js',
+        'bower_components/fotorama/fotorama.js',
         'js/script.js',
 
     ];
