@@ -8,7 +8,7 @@ $this->title = 'Прокат автомобильных боксов и бага
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
-    <div class="col-md-6">    
+    <div class="col-md-6 text-center">    
         <h1><?= $this->title?></h1>
     </div>
     <div class="col-md-6 text-center">    
@@ -19,6 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+
+<hr>
 
 <div class="row">
 <div class="col-md-12">
