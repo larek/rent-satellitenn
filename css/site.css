@@ -3,6 +3,7 @@ body {
     height: 100%;
 }
 
+
 .wrap {
     min-height: 100%;
     height: auto;
@@ -105,4 +106,9 @@ a.desc:after {
 .color-img-wrapper{
     height:150px;
     padding:10px;
+}
+
+.header_contact {
+    padding-top: 20px;
+    font-size: 26px;
 }

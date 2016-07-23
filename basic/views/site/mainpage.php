@@ -7,8 +7,25 @@ use yii\helpers\Html;
 $this->title = 'Прокат автомобильных боксов и багажных систем';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-    <h1 class='text-center'><?= $this->title?></h1>
-    <p class=""> Предлагаем Вам воспользоваться услугой проката автомобильных боксов и багажных систем (поперечин на крышу автомобиля). Предлагаемые нами к прокату автобоксы марки "Satellite" идеально подойдут для дальних путешествий, перевозки грузов, горнолыжного снаряжения и других вещей. Так же осуществляем подбор качественных поперечин, непосредственно, для Вашего автомобиля. Мы не предлагаем к установке дешевые универсальные багажники, так как это может привести к повреждению лакокрасочного покрытия автомобиля и просто небезопасно. Для клиентов, воспользовавшихся услугами аренды, предлагаеся система скидок по выкупу заинтересовавшего оборудования. Всю интересующую Вас информацию Вы можете получить по телефонам:</p>
+<div class="row">
+    <div class="col-md-6">    
+        <h1><?= $this->title?></h1>
+    </div>
+    <div class="col-md-6 text-center">    
+        <div class="header_contact">
+            <span><i class="fa fa-phone" aria-hidden="true"></i> 424-50-24</span>
+            <br>
+            <span><i class="fa fa-mobile-phone" aria-hidden="true"></i> +7-910-385-21-44</span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+    <p class=""> Предлагаем Вам воспользоваться услугой проката автомобильных боксов и багажных систем (поперечин на крышу автомобиля). Предлагаемые нами к прокату автобоксы марки "Satellite" идеально подойдут для дальних путешествий, перевозки грузов, горнолыжного снаряжения и других вещей. Так же осуществляем подбор качественных поперечин, непосредственно, для Вашего автомобиля. Мы не предлагаем к установке дешевые универсальные багажники, так как это может привести к повреждению лакокрасочного покрытия автомобиля и просто небезопасно. Для клиентов, воспользовавшихся услугами аренды, предлагаеся система скидок по выкупу заинтересовавшего оборудования. Всю интересующую Вас информацию Вы можете получить по телефонам: </p>
+</div>
+</div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -45,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class='alert alert-info'>1. Выберете бокс, который вы хотите забронировать</div>
     <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-400 color-img img-responsive' src="/images/460grey.JPG" alt="...">
@@ -84,7 +101,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-460 color-img img-responsive' src="/images/460grey.JPG" alt="...">
@@ -123,7 +140,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-520 color-img img-responsive' src="/images/520grey.JPG" alt="...">
@@ -370,7 +387,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div style="margin-top:10px" class="input-group col-md-12">
             <!-- Button -->
 
-            <div class="col-sm-12 controls text-center">
+            <div class="col-sm-12 controls">
 
                 <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i>
  Прочитать условия аренды</a> <a id="btn-fblogin" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i>
