@@ -18,20 +18,33 @@ $(document).ready(function(){
 		$(".color-img-"+id).attr('src',product_images[id+color]);
 	});
 
-	$(".btn-color").click(function(){
-		$(".btn-color").removeClass('btn-primary');
-		$(".btn-color").html("Выбрать");
+	$(".btn-color").click(function(){		
 
-		$(this).addClass('btn-primary');
-		$(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
+		if($(this).hasClass('btn-primary')){
+			$(".btn-color").removeClass('btn-primary');
+			$(".btn-color").html("Выбрать");
+			$(this).addClass('btn-default');
+		}else{
+			$(".btn-color").removeClass('btn-primary');
+			$(".btn-color").html("Выбрать");
+			$(this).addClass('btn-primary');
+			$(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
+		}
 	});
 
 	$(".btn-place").click(function(){
-		$(".btn-place").removeClass('btn-primary');
-		$(".btn-place").html("Выбрать");
 
-		$(this).addClass('btn-primary');
-		$(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
+		if($(this).hasClass('btn-primary')){
+			$(".btn-place").removeClass('btn-primary');
+			$(".btn-place").html("Выбрать");
+			$(this).addClass('btn-default');
+		}else{
+			$(".btn-place").removeClass('btn-primary');
+			$(".btn-place").html("Выбрать");
+			$(this).addClass('btn-primary');
+			$(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
+		}
+		
 	});
 
 
