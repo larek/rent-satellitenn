@@ -93,14 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="caption">
                     <h3>Автобокс "Satellite 400"</h3>
                     <table class="table table-striped">
-                        <tr>
-                            <td>Цвет</td>
-                            <td>
-                                <span class='color color-silver' id='400' data-color='grey'></span>
-                                <span class='color color-white' id='400' data-color='white'></span>
-                                <span class='color color-black' id='400' data-color='black'></span>
-                            </td>
-                        </tr>
+
                         <tr>
                             <td>Объем</td>
                             <td>400 литров</td>
@@ -132,14 +125,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="caption">
                     <h3>Автобокс "Satellite 460"</h3>
                     <table class="table table-striped">
-                        <tr>
-                            <td>Цвет</td>
-                            <td>
-                                <span class='color color-silver' id='460' data-color='grey'></span>
-                                <span class='color color-white' id='460' data-color='white'></span>
-                                <span class='color color-black' id='460' data-color='black'></span>
-                            </td>
-                        </tr>
+
                         <tr>
                             <td>Объем</td>
                             <td>460 литров</td>
@@ -171,14 +157,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="caption">
                     <h3>Автобокс "Satellite 520"</h3>
                     <table class="table table-striped">
-                        <tr>
-                            <td>Цвет</td>
-                            <td>
-                                <span class='color color-silver' id='520' data-color='grey'></span>
-                                <span class='color color-white' id='520' data-color='white'></span>
-                                <span class='color color-black' id='520' data-color='black'></span>
-                            </td>
-                        </tr>
+
                         <tr>
                             <td>Объем</td>
                             <td>520 литров</td>
@@ -283,7 +262,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="col-sm-12 controls">
                 <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i> Прочитать условия аренды</a> 
             </div>
-            
+
             <div class="col-sm-12 controls">
                 <a id="btn-fblogin" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i> Забронировать</a>
             </div>
