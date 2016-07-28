@@ -112,7 +112,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                     </table>
 
-                    <p><span class="btn btn-default btn-color" role="button">Выбрать</span></p>
+                    <p><span class="btn btn-default btn-color" id='400' role="button">Выбрать</span></p>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                     </table>
 
-                    <p><span class="btn btn-default btn-color" role="button">Выбрать</span></p>
+                    <p><span class="btn btn-default btn-color" id='460' role="button">Выбрать</span></p>
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                     </table>
 
-                    <p><span class="btn btn-default btn-color" role="button">Выбрать</span></p>
+                    <p><span class="btn btn-default btn-color" id='520' role="button">Выбрать</span></p>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@ $this->params['breadcrumbs'][] = $this->title;
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Штатное место</h4>
-    			<span class='btn btn-default btn-sm btn-place'>Выбрать</span>
+    			<span class='btn btn-default btn-sm btn-place' id='1'>Выбрать</span>
     		</div>
     	</div>
     	   <div class="col-md-6">
@@ -204,7 +204,7 @@ $this->params['breadcrumbs'][] = $this->title;
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Рейлинг</h4>
-    			<span class='btn btn-default btn-sm btn-place'>Выбрать</span>
+    			<span class='btn btn-default btn-sm btn-place' id='2'>Выбрать</span>
     		</div>
     	</div>
 
@@ -239,9 +239,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="input-daterange input-group" id="datepicker">
 
-                    <input type="text" class="input-sm form-control" name="start" placeholder='Начало аренды' />
+                    <input type="text" class="input-sm form-control date-to" name="start" placeholder='Начало аренды' />
                     <span class="input-group-addon">До</span>
-                    <input type="text" class="input-sm form-control" name="end" placeholder="Конеч аренды" />
+                    <input type="text" class="input-sm form-control date-from" name="end" placeholder="Конеч аренды" />
                 </div>
             </div>
 
@@ -264,7 +264,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
             <div class="col-sm-12 controls">
-                <a id="btn-fblogin" class="btn btn-primary btn-lg"><i class="fa fa-check" aria-hidden="true"></i> Забронировать</a>
+                <a id="btn-fblogin" class="btn btn-primary btn-lg btn-rent"><i class="fa fa-check" aria-hidden="true"></i> Забронировать</a>
             </div>
         </div>
 
