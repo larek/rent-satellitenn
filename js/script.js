@@ -1,31 +1,37 @@
 $(document).ready(function() {
 
-    var active_box;
-    var active_place;
-    var prices_box = {
+    var active_box = null;
+    var active_place = null;
+
+    var boxes = {
         400: {
+            'name' : 'Satellite 400',
             1: 1000,
             2: 200,
             3: 150
         },
         460: {
+            'name' : 'Satellite 460',
             1: 1000,
             2: 200,
             3: 150
         },
         520: {
+            'name' : 'Satellite 520',
             1: 1250,
             2: 250,
             3: 200
         },
     }
 
-    var prices_place = {
+    var places = {
         1: {
+            'name': 'Штатное место',
             1: 100,
             2: 50
         },
         2: {
+            'name': 'Рейлинг',
             1: 150,
             2: 100
         }
@@ -45,6 +51,7 @@ $(document).ready(function() {
             $(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
             active_box = $(this).attr('id');
         }
+        checkCalculation();
     });
 
     $(".btn-place").click(function() {
@@ -61,16 +68,50 @@ $(document).ready(function() {
             $(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
             active_place = $(this).attr('id');
         }
+        checkCalculation();
 
     });
 
 
     $('.input-daterange').datepicker({
-    	'language' : 'ru-RU',
-    	'autoclose': true
+        'language': 'ru-RU',
+        'autoclose': true
+    });
+
+    $(".date-to").change(function() {
+        checkCalculation();
+    });
+
+    $(".date-from").change(function() {
+        checkCalculation();
     });
 
     $(".btn-rent").click(function() {
+
+    });
+
+    function toDate(dateStr) {
+        var parts = dateStr.split(".");
+        return new Date(parts[2], parts[1] - 1, parts[0]).getTime();
+    }
+
+    function checkCalculation() {
+        if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "") {
+            $(".resultCalculator").slideDown();
+            $(".beforeCalculated").slideUp();
+            var result = Calculate();
+            $(".priceRent").html(result.priceRent);
+            $(".activeBox").html(boxes[active_box]['name']);
+            $(".activePlace").html(places[active_place]['name']);
+            $(".rangeDay").html(result.rangeDay);
+        } else {
+            $(".resultCalculator").slideUp();
+            $(".beforeCalculated").slideDown();
+
+        }
+    }
+
+    function Calculate() {
         var dateTo = toDate($(".date-to").val());
         var dateFrom = toDate($(".date-from").val());
         var range = dateFrom - dateTo;
@@ -87,24 +128,19 @@ $(document).ready(function() {
 
         rangeDay < 31 ? placeCategory = 1 : placeCategory = 2;
 
-        priceBox = (priceCategory == 1 ? prices_box[active_box][priceCategory] : prices_box[active_box][priceCategory] * rangeDay);
+        priceBox = (priceCategory == 1 ? boxes[active_box][priceCategory] : boxes[active_box][priceCategory] * rangeDay);
 
-        pricePlace = prices_place[active_place][placeCategory] * rangeDay;
+        pricePlace = places[active_place][placeCategory] * rangeDay;
 
         var data = {
             'priceCategory': priceCategory,
             'priceBox': priceBox,
             'pricePlace': pricePlace,
             'rangeDay': rangeDay,
-            'rent': priceBox + pricePlace,
+            'priceRent': priceBox + pricePlace,
         }
 
-        console.log(data);
-    });
-
-    function toDate(dateStr) {
-        var parts = dateStr.split(".");
-        return new Date(parts[2], parts[1] - 1, parts[0]).getTime();
+        return data;
     }
 
 });

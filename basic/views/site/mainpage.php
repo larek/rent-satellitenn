@@ -85,7 +85,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class='alert alert-info'>1. Выберете бокс, который вы хотите забронировать</div>
     <div class="row">
 
-        <div class="col-md-4 ">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-400 color-img img-responsive' src="/images/460grey.JPG" alt="...">
@@ -117,7 +117,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4 ">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-460 color-img img-responsive' src="/images/460grey.JPG" alt="...">
@@ -149,7 +149,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4 ">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-520 color-img img-responsive' src="/images/520grey.JPG" alt="...">
@@ -189,7 +189,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row">
-    	<div class="col-md-6">
+    	<div class="col-md-6 col-sm-6 col-xs-12">
     		<div class="col-md-4 col-sm-4 col-xs-4">
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
@@ -198,7 +198,7 @@ $this->params['breadcrumbs'][] = $this->title;
     			<span class='btn btn-default btn-sm btn-place' id='1'>Выбрать</span>
     		</div>
     	</div>
-    	   <div class="col-md-6">
+    	   <div class="col-md-6 col-sm-6 col-xs-12">
     		<div class="col-md-4 col-sm-4 col-xs-4">
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
@@ -210,8 +210,78 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </div>
 	<br><br>
-    <div class="alert alert-info">3. Заполните данные о себе и о вашем автомобиле</div>
 
+    <div class="alert alert-info">
+        3. Даты аренды    
+    </div>
+    <div class="row">
+        
+                
+
+                <div class="input-daterange input-group" id="datepicker">
+                    <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> От</span>
+                            <input type="text" class="input-sm form-control date-to" name="start" placeholder='Начало аренды' />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> До</span>
+                            <input type="text" class="input-sm form-control date-from" name="end" placeholder="Конец аренды" />
+                        </div>
+                    </div>
+                </div>
+        
+
+    </div>
+    
+    <br><br>
+        <div class="alert alert-warning beforeCalculated">
+            Чтобы забронировать автобокс, выберете необходимый бокс, место установки и даты аренды
+        </div>
+    <div class="row resultCalculator" style='display:none'>
+    <div class="col-md-12">
+        <table class='table table-striped table-bordered'>
+            <tbody>
+                <tr>
+                    <th colspan='2' class='text-center'>
+                        Ваш выбор
+                    </th>
+                </tr>
+                <tr>
+                    <td style='width:50%'>Цена</td>
+                    <td><span class="priceRent"></span></td>
+                </tr>
+                <tr>
+                    <td>Срок аренды</td>
+                    <td><span class="rangeDay"></span></td>
+                </tr>
+                <tr>
+                    <td>Автобокс</td>
+                    <td><span class="activeBox"></span></td>
+                </tr>
+                <tr>
+                    <td>Место установки</td>
+                    <td><span class="activePlace"></span></td>
+                </tr>
+                <tr>
+                    <td colspan='2' class='text-center'>
+                         <a class="btn btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i> Прочитать условия аренды</a> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+        
+        
+        
+    
+    <br><br>
+    <div class="col-md-12">
+        <div class="alert alert-info">3. Заполните данные о себе и о вашем автомобиле</div>
+    </div>
     <form id="loginform" class="form-horizontal" role="form">
 
         <div class="col-md-6">
@@ -231,19 +301,20 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
-                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Марка, модель и год выпуска автомобиля">
+                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Марка автомобиля">
             </div>
 
             <div style="margin-bottom: 25px" class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-
-                <div class="input-daterange input-group" id="datepicker">
-
-                    <input type="text" class="input-sm form-control date-to" name="start" placeholder='Начало аренды' />
-                    <span class="input-group-addon">До</span>
-                    <input type="text" class="input-sm form-control date-from" name="end" placeholder="Конеч аренды" />
-                </div>
+                <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Модель автомобиля">
             </div>
+
+            <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Год выпуска автомобиля">
+            </div>
+
+            
 
             <div style="margin-bottom: 25px" class="input-group">
             	
@@ -251,23 +322,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
         </div>
 
-        <div class="input-group">
-            
 
-        </div>
 
-        <div style="margin-top:10px" class="input-group col-md-12">
-            <!-- Button -->
-
-            <div class="col-sm-12 controls">
-                <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i> Прочитать условия аренды</a> 
-            </div>
-
-            <div class="col-sm-12 controls">
+            <div class="col-xs-12 col-ms-12 col-sm-12 controls">
                 <a id="btn-fblogin" class="btn btn-primary btn-lg btn-rent"><i class="fa fa-check" aria-hidden="true"></i> Забронировать</a>
             </div>
-        </div>
 
     </form>
+    </div>
 
     
