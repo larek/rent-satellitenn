@@ -250,20 +250,22 @@ $this->params['breadcrumbs'][] = $this->title;
                     </th>
                 </tr>
                 <tr>
-                    <td style='width:50%'>Цена</td>
-                    <td><span class="priceRent"></span></td>
-                </tr>
-                <tr>
-                    <td>Срок аренды</td>
-                    <td><span class="rangeDay"></span></td>
-                </tr>
-                <tr>
                     <td>Автобокс</td>
                     <td><span class="activeBox"></span></td>
                 </tr>
                 <tr>
                     <td>Место установки</td>
                     <td><span class="activePlace"></span></td>
+                </tr>
+                <tr>
+                    <td style='width:50%'>Срок аренды</td>
+                    <td><span class="rangeDay"></span></td>
+                </tr>
+                
+                <tr>
+                    <td colspan='2' class='text-center'>
+                        <span class="priceRent"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan='2' class='text-center'>
