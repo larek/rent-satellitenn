@@ -185,7 +185,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
 
     <div class="alert alert-info">
-    	2. Выберете место установки бокса
+    	2. Присутствуют ли у вас поперечины?
     </div>
 
     <div class="row">
@@ -194,7 +194,7 @@ $this->params['breadcrumbs'][] = $this->title;
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
-    			<h4>Штатное место</h4>
+    			<h4>Отсутствуют</h4>
     			<span class='btn btn-default btn-sm btn-place' id='1'>Выбрать</span>
     		</div>
     	</div>
@@ -203,7 +203,7 @@ $this->params['breadcrumbs'][] = $this->title;
     			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
-    			<h4>Рейлинг</h4>
+    			<h4>Присутствуют</h4>
     			<span class='btn btn-default btn-sm btn-place' id='2'>Выбрать</span>
     		</div>
     	</div>
