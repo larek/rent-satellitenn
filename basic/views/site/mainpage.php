@@ -217,7 +217,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
     	<div class="col-md-6 col-sm-6 col-xs-12">
     		<div class="col-md-4 col-sm-4 col-xs-4">
-    			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
+    			<img src="/images/bez_pop.jpg" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Отсутствуют</h4>
@@ -226,7 +226,7 @@ $this->params['breadcrumbs'][] = $this->title;
     	</div>
     	   <div class="col-md-6 col-sm-6 col-xs-12">
     		<div class="col-md-4 col-sm-4 col-xs-4">
-    			<img src="http://placehold.it/150x150" class='img-responsive' alt="">
+    			<img src="/images/pop.jpg" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
     			<h4>Присутствуют</h4>
