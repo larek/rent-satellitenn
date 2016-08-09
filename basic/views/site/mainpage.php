@@ -114,7 +114,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
-                    <img class='color-img-400 color-img img-responsive' src="/images/460grey.JPG" alt="...">
+                    <img class='color-img-400 color-img img-responsive' src="/images/400.jpg" alt="...">
                 </div>
                 <div class="caption">
                     <h3>Автобокс "Satellite 400"</h3>
@@ -146,7 +146,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
-                    <img class='color-img-460 color-img img-responsive' src="/images/460grey.JPG" alt="...">
+                    <img class='color-img-460 color-img img-responsive' src="/images/460.JPG" alt="...">
                 </div>
                 <div class="caption">
                     <h3>Автобокс "Satellite 460"</h3>
@@ -178,7 +178,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
-                    <img class='color-img-520 color-img img-responsive' src="/images/520grey.JPG" alt="...">
+                    <img class='color-img-520 color-img img-responsive' src="/images/520.JPG" alt="...">
                 </div>
                 <div class="caption">
                     <h3>Автобокс "Satellite 520"</h3>
