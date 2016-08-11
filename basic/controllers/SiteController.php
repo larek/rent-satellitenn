@@ -63,6 +63,15 @@ class SiteController extends Controller
         return $this->render('mainpage');
     }
 
+    public function actionSend(){
+            echo Yii::$app->mail->compose('layouts/html',['content' => 'hello'])
+            ->setFrom(['saitom@yandex.ru' => 'rentbox.satellitenn.ru'])
+            ->setTo(['t9101029991@gmail.com'])
+            ->setSubject('Заказ с сайта. '.date("Y-m-d H:i:s"))
+            //->setHtmlBody('Заказ - <a href="http://'.$_SERVER['SERVER_NAME'].$url.'">Ссылка на заказ</a>')
+            ->send();
+    }
+
     /**
      * Login action.
      *
