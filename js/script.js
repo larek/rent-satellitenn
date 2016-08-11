@@ -51,7 +51,6 @@ $(document).ready(function() {
             $(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
             active_box = $(this).attr('id');
         }
-        checkCalculation();
     });
 
     $(".btn-place").click(function() {
@@ -68,7 +67,6 @@ $(document).ready(function() {
             $(this).html('<i class="fa fa-check" aria-hidden="true"></i> Выбрано');
             active_place = $(this).attr('id');
         }
-        checkCalculation();
 
     });
 
@@ -78,13 +76,7 @@ $(document).ready(function() {
         'autoclose': true
     });
 
-    $(".date-to").change(function() {
-        checkCalculation();
-    });
 
-    $(".date-from").change(function() {
-        checkCalculation();
-    });
 
     $(".btn-rent").click(function() {
 
@@ -95,21 +87,19 @@ $(document).ready(function() {
         return new Date(parts[2], parts[1] - 1, parts[0]).getTime();
     }
 
-    function checkCalculation() {
+    $(".btn-calc").click(function checkCalculation() {
         if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "") {
-            $(".resultCalculator").slideDown();
-            $(".beforeCalculated").slideUp();
+            $(".resultCalculator").modal();
             var result = Calculate();
-            $(".priceRent").html(result.priceRent);
+            $(".priceRent").html(result.priceRent+" руб.");
             $(".activeBox").html(boxes[active_box]['name']);
             $(".activePlace").html(places[active_place]['name']);
             $(".rangeDay").html(result.rangeDay);
         } else {
-            $(".resultCalculator").slideUp();
-            $(".beforeCalculated").slideDown();
+            $(".modalAlert").modal();
 
         }
-    }
+    });
 
     function Calculate() {
         var dateTo = toDate($(".date-to").val());
@@ -134,6 +124,8 @@ $(document).ready(function() {
 
         var data = {
             'priceCategory': priceCategory,
+            'active_box': active_box,
+            'active_place': active_place,
             'priceBox': priceBox,
             'pricePlace': pricePlace,
             'rangeDay': rangeDay,

@@ -263,11 +263,46 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     
     <br><br>
-        <div class="alert alert-warning beforeCalculated">
-            Чтобы забронировать автобокс, выберете необходимый бокс, место установки и даты аренды
+
+        
+        <div class="col-xs-12 col-ms-12 col-sm-12 controls">
+            <a id="btn-fblogin" class="btn btn-primary btn-lg btn-calc"><i class="fa fa-check" aria-hidden="true"></i> Расчитать стоимость</a>
         </div>
-    <div class="row resultCalculator" style='display:none'>
+
+<!-- rent rules -->
+<br><br><br>
+<div class="row">
     <div class="col-md-12">
+        <h3 class='text-center'>Правила аренды автобоксов</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Оборудование предоставляется в аренду под залог денежных средств.</li>
+                        <li class="list-group-item">Плата за аренду взимается до начала использования оборудования исходя из предполагаемого срока аренды.</li>
+                        <li class="list-group-item">Расчет количества дней аренды производится следующим способом: количество календарных дней, которое оборудование находилось у клиента, плюс день установки оборудования. День возврата при этом не учитывается.</li>
+                        <li class="list-group-item">При аренде оборудования на срок до 5 дней, стоимость аренды равна сумме аренды за 5 дней.</li>
+                        <li class="list-group-item">При первом сеансе аренды взимается залог в размере 5000 рублей. При повторном обращении залоговая стоимость не взимается.</li>
+                        <li class="list-group-item">В случае возврата оборудования раньше оговоренной даты, перерасчет стоимости аренды по фактическому количеству дней аренды не производится, за исключением случаев, когда условия досрочного возврата были оговорены отдельно.</li>
+                        <li class="list-group-item">Возврат оборудования позже оговоренной даты допускается только при условии согласования изменения даты по телефону или любым другим способом.</li>
+                        <li class="list-group-item">В случае возврата оборудования позже оговоренной даты, производится перерасчет стоимости аренды по фактическому количеству дней аренды. Стоимость каждых последующих суток аренды остается неизменной.</li>
+                        <li class="list-group-item">При повреждении оборудования, в результате которого не возможна его дальнейшая безопасная эксплуатация, из суммы залога будет удержана стоимость восстановительного ремонта и поврежденных деталей.</li>
+                        <li class="list-group-item">В случае повреждения оборудования, в результате которого невозможен восстановительный ремонт или невозврата оборудования, арендатор обязуется оплатить разницу между фактической розничной стоимостью оборудования, указанной в договоре аренды, и суммой залога.</li>
+                        <li class="list-group-item">Часы работы проката с 10:00 до 19:00. Прием и выдача оборудования в нерабочие часы производится только по предварительной договоренности.</li>
+                    </ul>
+    </div>
+</div>
+<!-- end rent rules -->
+
+<!-- Modal -->
+<div class="modal fade resultCalculator" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+      <!-- modal body -->
+    <div class="row">
+        <div class="col-md-12">
         <table class='table table-striped table-bordered'>
             <tbody>
                 <tr>
@@ -293,11 +328,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <span class="priceRent"></span>
                     </td>
                 </tr>
-                <tr>
-                    <td colspan='2' class='text-center'>
-                         <a class="btn btn-link" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i> Прочитать условия аренды</a> 
-                    </td>
-                </tr>
+               
             </tbody>
         </table>
     </div>
@@ -345,7 +376,7 @@ $this->params['breadcrumbs'][] = $this->title;
             
 
             <div style="margin-bottom: 25px" class="input-group">
-            	
+                
             </div>
 
         </div>
@@ -357,6 +388,35 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
     </form>
+
     </div>
+    <!-- end modal body -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Alert Modal -->
+<div class="modal fade modalAlert" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+                    Чтобы узнать стоимость и забронировать автобокс, выберете необходимый бокс, место установки и даты аренды
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+   
 
     
