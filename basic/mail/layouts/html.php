@@ -15,7 +15,18 @@ use yii\helpers\Html;
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <?= $content ?>
+    <h2>Информация о заказе</h2>
+    <p>Satellite <?= $active_box;?></p>
+    <p>Рейлинги - <?= $content['active_placeName'];?></p>
+    <p>Срок аренды - <?= $content['rangeDay'];?></p>
+    <p>Даты аренды - <?= $content['rangeDates']?></p>
+    <p>Стоимость аренды - <?= $content['priceRent'];?></p>
+    <h2>Информация о клиенте</h2>
+    <p>Имя - <?= $content['userName'];?></p>
+    <p>Телефон - <?= $content['userPhone'];?></p>
+    <p>Марка автомобиля - <?= $content['userMarka'];?></p>
+    <p>Модель автомобиля - <?= $content['userModel'];?></p>
+    <p>Год выпуска - <?= $content['userYear'];?></p>
     <?php $this->endBody() ?>
 </body>
 </html>

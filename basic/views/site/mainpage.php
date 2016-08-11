@@ -346,12 +346,12 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-6">
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="ФИО">
+                <input id="login-username" type="text" class="form-control userName" name="username" value="" placeholder="ФИО*">
             </div>
 
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                <input id="login-username" type="tel" class="form-control" name="username" value="" placeholder="Телефон">
+                <input id="login-username" type="tel" class="form-control userPhone" name="username" value="" placeholder="Телефон*">
             </div>
 
         </div>
@@ -360,17 +360,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
-                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Марка автомобиля">
+                <input id="login-username" type="text" class="form-control userMarka" name="username" value="" placeholder="Марка автомобиля">
             </div>
 
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
-                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Модель автомобиля">
+                <input id="login-username" type="text" class="form-control userModel" name="username" value="" placeholder="Модель автомобиля">
             </div>
 
             <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
-                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Год выпуска автомобиля">
+                <input id="login-username" type="text" class="form-control userYear" name="username" value="" placeholder="Год выпуска автомобиля">
             </div>
 
             
@@ -408,8 +408,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
-      <div class="modal-body">
-                    Чтобы узнать стоимость и забронировать автобокс, выберете необходимый бокс, место установки и даты аренды
+      <div class="modal-body alertContent">
+                    
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>

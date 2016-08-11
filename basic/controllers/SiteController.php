@@ -64,12 +64,37 @@ class SiteController extends Controller
     }
 
     public function actionSend(){
-            echo Yii::$app->mail->compose('layouts/html',['content' => 'hello'])
+        $content = $_POST['result'];
+       //  $result['active_box'];
+       //  $result['active_placeName'];
+       //  $result['rangeDay'];
+       //  $result['rangeDates'];
+       //  $result['priceRent'];
+       //  $result['userName'];
+       //  $result['userPhone'];
+       //  $result['userMarka'];
+       //  $result['userModel'];
+       //  $result['userYear'];
+       // echo ($_POST['result']);
+            echo Yii::$app->mail->compose()
             ->setFrom(['saitom@yandex.ru' => 'rentbox.satellitenn.ru'])
             ->setTo(['t9101029991@gmail.com'])
             ->setSubject('Заказ с сайта. '.date("Y-m-d H:i:s"))
-            //->setHtmlBody('Заказ - <a href="http://'.$_SERVER['SERVER_NAME'].$url.'">Ссылка на заказ</a>')
+            ->setHtmlBody('<h2>Информация о заказе</h2>
+    <p>Satellite '. $content["active_box"].'</p>
+    <p>Рейлинги - '. $content["active_placeName"].'</p>
+    <p>Срок аренды - '. $content["rangeDay"].'</p>
+    <p>Даты аренды - '. $content["rangeDates"].'</p>
+    <p>Стоимость аренды - '. $content["priceRent"].'</p>
+    <h2>Информация о клиенте</h2>
+    <p>Имя - '. $content["userName"].'</p>
+    <p>Телефон - '. $content["userPhone"].'</p>
+    <p>Марка автомобиля - '. $content["userMarka"].'</p>
+    <p>Модель автомобиля - '. $content["userModel"].'</p>
+    <p>Год выпуска - '. $content["userYear"] .'</p>')
             ->send();
+
+
     }
 
     /**

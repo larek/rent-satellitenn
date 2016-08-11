@@ -26,12 +26,12 @@ $(document).ready(function() {
 
     var places = {
         1: {
-            'name': 'Штатное место',
+            'name': 'Отсутствуют',
             1: 100,
             2: 50
         },
         2: {
-            'name': 'Рейлинг',
+            'name': 'Присутствуют',
             1: 150,
             2: 100
         }
@@ -96,9 +96,34 @@ $(document).ready(function() {
             $(".activePlace").html(places[active_place]['name']);
             $(".rangeDay").html(result.rangeDay);
         } else {
+            $(".alertContent").html('Чтобы узнать стоимость и забронировать автобокс, выберете необходимый бокс, место установки и даты аренды');
             $(".modalAlert").modal();
 
         }
+    });
+
+    $(".btn-rent").click(function(){
+        
+        if($(".userName").val() !=='' && $(".userPhone").val() !== ""){
+            var result = Calculate();
+            result['userName'] = $(".userName").val();
+            result['userPhone'] = $(".userPhone").val();
+            result['userMarka'] = $(".userMarka").val();
+            result['userModel'] = $(".userModel").val();
+            result['userYear'] = $(".userYear").val();
+            console.log(result);
+            $.post('/site/send',{'result' : result}).done(function(data){
+                console.log(data);
+                if(data=="1"){
+                    $(".resultCalculator").modal('hide');
+                    $(".alertContent").html('Заявка на бронирование успешно принята. В ближайшее время мы с вами свяжемся');
+                    $(".modalAlert").modal();
+                }
+            });
+        }else{
+            console.log('Заполните имя и телефон');
+        }
+
     });
 
     function Calculate() {
@@ -126,9 +151,11 @@ $(document).ready(function() {
             'priceCategory': priceCategory,
             'active_box': active_box,
             'active_place': active_place,
+            'active_placeName': places[active_place]['name'],
             'priceBox': priceBox,
             'pricePlace': pricePlace,
             'rangeDay': rangeDay,
+            'rangeDates': $(".date-to").val() + ' - ' + $(".date-from").val(),
             'priceRent': priceBox + pricePlace,
         }
 
