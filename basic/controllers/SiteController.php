@@ -78,7 +78,7 @@ class SiteController extends Controller
        // echo ($_POST['result']);
             echo Yii::$app->mail->compose()
             ->setFrom(['saitom@yandex.ru' => 'rentbox.satellitenn.ru'])
-            ->setTo(['t9101029991@gmail.com'])
+            ->setTo(['t9101029991@gmail.com','satellitenn@yandex.ru'])
             ->setSubject('Заказ с сайта. '.date("Y-m-d H:i:s"))
             ->setHtmlBody('<h2>Информация о заказе</h2>
     <p>Satellite '. $content["active_box"].'</p>
