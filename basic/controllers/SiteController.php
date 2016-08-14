@@ -6,8 +6,10 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Calc;
 
 class SiteController extends Controller
 {
@@ -61,6 +63,16 @@ class SiteController extends Controller
     public function actionIndex()
     {
         return $this->render('mainpage');
+    }
+
+    public function actionGetcalc(){
+        $model = Calc::find()->all();
+        $data = [];
+        foreach ($model as $key => $value) {
+            $data[$value->id]['title']  = $value->title;
+            $data[$value->id]['value']  = $value->value;
+        }
+        echo json_encode($data, JSON_UNESCAPED_UNICODE);
     }
 
     public function actionSend(){

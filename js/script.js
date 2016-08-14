@@ -1,41 +1,52 @@
 $(document).ready(function() {
 
+
+    var boxes;
+    var places;
+
+    $.post('/site/getcalc').done(function(res) {
+        dataCalc = $.parseJSON(res);
+         boxes = {
+            400: {
+                'name': 'Satellite 400',
+                1: dataCalc['1']['value'],
+                2: dataCalc['2']['value'],
+                3: dataCalc['3']['value']
+            },
+            460: {
+                'name': 'Satellite 460',
+                1: dataCalc['4']['value'],
+                2: dataCalc['5']['value'],
+                3: dataCalc['6']['value']
+            },
+            520: {
+                'name': 'Satellite 520',
+                1: dataCalc['7']['value'],
+                2: dataCalc['8']['value'],
+                3: dataCalc['9']['value']
+            },
+        }
+
+         places = {
+            1: {
+                'name': 'Отсутствуют',
+                1: dataCalc['10']['value'],
+                2: dataCalc['11']['value']
+            },
+            2: {
+                'name': 'Присутствуют',
+                1: dataCalc['12']['value'],
+                2: dataCalc['13']['value']
+            }
+        }
+    });
+
+  
+
     var active_box = null;
     var active_place = null;
 
-    var boxes = {
-        400: {
-            'name' : 'Satellite 400',
-            1: 1000,
-            2: 200,
-            3: 150
-        },
-        460: {
-            'name' : 'Satellite 460',
-            1: 1000,
-            2: 200,
-            3: 150
-        },
-        520: {
-            'name' : 'Satellite 520',
-            1: 1250,
-            2: 250,
-            3: 200
-        },
-    }
 
-    var places = {
-        1: {
-            'name': 'Отсутствуют',
-            1: 100,
-            2: 50
-        },
-        2: {
-            'name': 'Присутствуют',
-            1: 150,
-            2: 100
-        }
-    }
 
     $(".btn-color").click(function() {
 
@@ -91,7 +102,7 @@ $(document).ready(function() {
         if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "") {
             $(".resultCalculator").modal();
             var result = Calculate();
-            $(".priceRent").html(result.priceRent+" руб.");
+            $(".priceRent").html(result.priceRent + " руб.");
             $(".activeBox").html(boxes[active_box]['name']);
             $(".activePlace").html(places[active_place]['name']);
             $(".rangeDay").html(result.rangeDay);
@@ -102,25 +113,24 @@ $(document).ready(function() {
         }
     });
 
-    $(".btn-rent").click(function(){
-        
-        if($(".userName").val() !=='' && $(".userPhone").val() !== ""){
+    $(".btn-rent").click(function() {
+
+        if ($(".userName").val() !== '' && $(".userPhone").val() !== "") {
             var result = Calculate();
             result['userName'] = $(".userName").val();
             result['userPhone'] = $(".userPhone").val();
             result['userMarka'] = $(".userMarka").val();
             result['userModel'] = $(".userModel").val();
             result['userYear'] = $(".userYear").val();
-            console.log(result);
-            $.post('/site/send',{'result' : result}).done(function(data){
+            $.post('/site/send', { 'result': result }).done(function(data) {
                 console.log(data);
-                if(data=="1"){
+                if (data == "1") {
                     $(".resultCalculator").modal('hide');
                     $(".alertContent").html('Заявка на бронирование успешно принята. В ближайшее время мы с вами свяжемся');
                     $(".modalAlert").modal();
                 }
             });
-        }else{
+        } else {
             console.log('Заполните имя и телефон');
         }
 
@@ -161,5 +171,7 @@ $(document).ready(function() {
 
         return data;
     }
+
+
 
 });
