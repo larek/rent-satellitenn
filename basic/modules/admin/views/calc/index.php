@@ -9,30 +9,30 @@ use yii\grid\GridView;
  * @var app\modules\admin\models\CalcSearch $searchModel
  */
 
-$this->title = 'Calcs';
+$this->title = 'Калькулятор';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="calc-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Calc', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+   
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        //'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'title',
-            'value',
+            [
+                'format' => 'raw',
+                'value' => function($data){
+                    return Html::a($data->title,['update','id' => $data->id]);
+                }
+            ],
+            'value'
 
-            ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 

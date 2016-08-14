@@ -40,8 +40,8 @@ class Calc extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'value' => 'Value',
+            'title' => 'Название',
+            'value' => 'Стоимость',
         ];
     }
 }

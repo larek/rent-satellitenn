@@ -7,10 +7,10 @@ use yii\helpers\Html;
  * @var app\modules\admin\models\Calc $model
  */
 
-$this->title = 'Update Calc: ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Calcs', 'url' => ['index']];
+$this->title = 'Редактировать: ' . $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Калькулятор', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Обновить';
 ?>
 <div class="calc-update">
 

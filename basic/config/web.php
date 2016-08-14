@@ -8,7 +8,8 @@ $config = [
     'bootstrap' => ['log'],
     'modules' => [
         'admin' => [
-            'class' => 'app\modules\admin\Module'
+            'class' => 'app\modules\admin\Module',
+            'layout' => 'admin'
         ]
     ],
     'components' => [
