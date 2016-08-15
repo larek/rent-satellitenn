@@ -22,14 +22,22 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 </div>
 
-<hr>
 <div class="row">
+<div class="alert alert-info alert-info-empty"></div>
 
     <div class="col-md-6">
         <div class="fotorama"
              data-width="100%"
              data-ratio="600/400">
-          <img src="/images/2 (1).jpg">
+          <img src="/images/1 (3).jpg">
+          <img src="/images/1 (7).jpg">
+          <img src="/images/1 (9).jpg">
+          <img src="/images/1 (14).jpg">
+          <img src="/images/1 (18).jpg">
+          <img src="/images/1 (22).jpg">
+          <img src="/images/1 (24).jpg">
+          <img src="/images/1 (27).jpg">
+          <!-- <img src="/images/2 (1).jpg">
           <img src="/images/2 (3).jpg">
           <img src="/images/2 (4).jpg">
           <img src="/images/2 (5).jpg">
@@ -57,18 +65,16 @@ $this->params['breadcrumbs'][] = $this->title;
           <img src="/images/2 (27).jpg">
           <img src="/images/2 (28).jpg">
           <img src="/images/2 (29).jpg">
-          <img src="/images/2 (30).jpg">
+          <img src="/images/2 (30).jpg"> -->
         </div>
     </div>
 <div class="col-md-6">
-    <div class='alert alert-warning'> 
-        Предлагаем Вам воспользоваться услугой проката автомобильных боксов и багажных систем (поперечин на крышу автомобиля). 
-    </div>
-    <div class='alert alert-warning'> 
-        Предлагаемые нами к прокату автобоксы марки "Satellite" идеально подойдут для дальних путешествий, перевозки грузов, горнолыжного снаряжения и других вещей. 
-    </div>
-    <div class='alert alert-warning'> 
-        Так же осуществляем подбор качественных поперечин, непосредственно, для Вашего автомобиля. Мы не предлагаем к установке дешевые универсальные багажники, так как это может привести к повреждению лакокрасочного покрытия автомобиля и просто небезопасно. Для клиентов, воспользовавшихся услугами аренды, предлагаеся система скидок по выкупу заинтересовавшего оборудования.
+    <div class='alert alert-warning alert-warning-satellite'> 
+        <p>Предлагаем Вам воспользоваться услугой проката автомобильных боксов и багажных систем (поперечин на крышу автомобиля). </p>
+   
+        <p>Предлагаемые нами к прокату автобоксы марки "Satellite" идеально подойдут для дальних путешествий, перевозки грузов, горнолыжного снаряжения и других вещей. </p>
+    
+        <p>Так же осуществляем подбор качественных поперечин, непосредственно, для Вашего автомобиля. Мы не предлагаем к установке дешевые универсальные багажники, так как это может привести к повреждению лакокрасочного покрытия автомобиля и просто небезопасно. Для клиентов, воспользовавшихся услугами аренды, предлагаеся система скидок по выкупу заинтересовавшего оборудования.</p>
     </div>
 </div>
 
@@ -108,7 +114,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
-    <div class='alert alert-info'>1. Выберете бокс, который вы хотите забронировать</div>
+    <div class='alert alert-info alert-info-satellite'>1. Выберете автобокс</div>
     <div class="row">
 
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -126,15 +132,15 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                         <tr>
                             <td>Габариты</td>
-                            <td>175x82x45</td>
+                            <td>139x90x38</td>
                         </tr>
                         <tr>
                             <td>Масса</td>
-                            <td>13 кг</td>
+                            <td>12 кг</td>
                         </tr>
                         <tr>
                             <td>Грузоподъемность</td>
-                            <td>до 60 кг.</td>
+                            <td>до 50 кг.</td>
                         </tr>
                     </table>
 
@@ -210,7 +216,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     
 
-    <div class="alert alert-info">
+    <div class="alert alert-info alert-info-satellite">
     	2. Присутствуют ли у вас поперечины?
     </div>
 
@@ -237,7 +243,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 	<br><br>
 
-    <div class="alert alert-info">
+    <div class="alert alert-info alert-info-satellite">
         3. Даты аренды    
     </div>
     <div class="row">
@@ -247,8 +253,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="input-daterange input-group" id="datepicker">
                     <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-12">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> От</span>
-                            <input type="text" class="input-sm form-control date-to" name="start" placeholder='Начало аренды' />
+                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> Начало аренды</span>
+                            <input type="text" class="input-sm form-control date-to" name="start" placeholder='' />
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -264,32 +270,22 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <br><br>
 
+        <div class="row">
         
-        <div class="col-xs-12 col-ms-12 col-sm-12 controls">
+        <div class="col-xs-12 col-ms-12 col-sm-12 text-center controls">
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" class='checkRules'> C <span class='btn-rules'>условиями аренды</span> оборудования ознакомлен
+                </label>
+              </div>
+        </div>
+        <div class="col-xs-12 col-ms-12 col-sm-12 text-center controls">
+            
             <a id="btn-fblogin" class="btn btn-primary btn-lg btn-calc"><i class="fa fa-check" aria-hidden="true"></i> Расчитать стоимость</a>
         </div>
+        </div>
 
-<!-- rent rules -->
-<br><br><br>
-<div class="row">
-    <div class="col-md-12">
-        <h3 class='text-center'>Правила аренды автобоксов</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">Оборудование предоставляется в аренду под залог денежных средств.</li>
-                        <li class="list-group-item">Плата за аренду взимается до начала использования оборудования исходя из предполагаемого срока аренды.</li>
-                        <li class="list-group-item">Расчет количества дней аренды производится следующим способом: количество календарных дней, которое оборудование находилось у клиента, плюс день установки оборудования. День возврата при этом не учитывается.</li>
-                        <li class="list-group-item">При аренде оборудования на срок до 5 дней, стоимость аренды равна сумме аренды за 5 дней.</li>
-                        <li class="list-group-item">При первом сеансе аренды взимается залог в размере 5000 рублей. При повторном обращении залоговая стоимость не взимается.</li>
-                        <li class="list-group-item">В случае возврата оборудования раньше оговоренной даты, перерасчет стоимости аренды по фактическому количеству дней аренды не производится, за исключением случаев, когда условия досрочного возврата были оговорены отдельно.</li>
-                        <li class="list-group-item">Возврат оборудования позже оговоренной даты допускается только при условии согласования изменения даты по телефону или любым другим способом.</li>
-                        <li class="list-group-item">В случае возврата оборудования позже оговоренной даты, производится перерасчет стоимости аренды по фактическому количеству дней аренды. Стоимость каждых последующих суток аренды остается неизменной.</li>
-                        <li class="list-group-item">При повреждении оборудования, в результате которого не возможна его дальнейшая безопасная эксплуатация, из суммы залога будет удержана стоимость восстановительного ремонта и поврежденных деталей.</li>
-                        <li class="list-group-item">В случае повреждения оборудования, в результате которого невозможен восстановительный ремонт или невозврата оборудования, арендатор обязуется оплатить разницу между фактической розничной стоимостью оборудования, указанной в договоре аренды, и суммой залога.</li>
-                        <li class="list-group-item">Часы работы проката с 10:00 до 19:00. Прием и выдача оборудования в нерабочие часы производится только по предварительной договоренности.</li>
-                    </ul>
-    </div>
-</div>
-<!-- end rent rules -->
+<br><br>
 
 <!-- Modal -->
 <div class="modal fade resultCalculator" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -339,7 +335,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <br><br>
     <div class="col-md-12">
-        <div class="alert alert-info">3. Заполните данные о себе и о вашем автомобиле</div>
+        <div class="alert alert-info alert-info-satellite">Заполните данные о себе и о вашем автомобиле</div>
     </div>
     <form id="loginform" class="form-horizontal" role="form">
 
@@ -383,7 +379,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-            <div class="col-xs-12 col-ms-12 col-sm-12 controls">
+            <div class="col-xs-12 col-ms-12 col-sm-12 text-center controls">
                 <a id="btn-fblogin" class="btn btn-primary btn-lg btn-rent"><i class="fa fa-check" aria-hidden="true"></i> Забронировать</a>
             </div>
 
@@ -416,6 +412,40 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
     </div>
   </div>
+</div>
+
+<!-- Rules Modal -->
+<div class="modal fade modalRules" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Правила аренды автобоксов</h4>
+      </div>
+      <div class="modal-body ">
+                    <ul class="list-group">
+                        <li class="list-group-item">Оборудование предоставляется в аренду под залог денежных средств.</li>
+                        <li class="list-group-item">Плата за аренду взимается до начала использования оборудования исходя из предполагаемого срока аренды.</li>
+                        <li class="list-group-item">Расчет количества дней аренды производится следующим способом: количество календарных дней, которое оборудование находилось у клиента, плюс день установки оборудования. День возврата при этом не учитывается.</li>
+                        <li class="list-group-item">При аренде оборудования на срок до 5 дней, стоимость аренды равна сумме аренды за 5 дней.</li>
+                        <li class="list-group-item">При первом сеансе аренды взимается залог в размере 5000 рублей. При повторном обращении залоговая стоимость не взимается.</li>
+                        <li class="list-group-item">В случае возврата оборудования раньше оговоренной даты, перерасчет стоимости аренды по фактическому количеству дней аренды не производится, за исключением случаев, когда условия досрочного возврата были оговорены отдельно.</li>
+                        <li class="list-group-item">Возврат оборудования позже оговоренной даты допускается только при условии согласования изменения даты по телефону или любым другим способом.</li>
+                        <li class="list-group-item">В случае возврата оборудования позже оговоренной даты, производится перерасчет стоимости аренды по фактическому количеству дней аренды. Стоимость каждых последующих суток аренды остается неизменной.</li>
+                        <li class="list-group-item">При повреждении оборудования, в результате которого не возможна его дальнейшая безопасная эксплуатация, из суммы залога будет удержана стоимость восстановительного ремонта и поврежденных деталей.</li>
+                        <li class="list-group-item">В случае повреждения оборудования, в результате которого невозможен восстановительный ремонт или невозврата оборудования, арендатор обязуется оплатить разницу между фактической розничной стоимостью оборудования, указанной в договоре аренды, и суммой залога.</li>
+                        <li class="list-group-item">Часы работы проката с 10:00 до 19:00. Прием и выдача оборудования в нерабочие часы производится только по предварительной договоренности.</li>
+                    </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yKVgzvBaUNWFbjVtEyruD-ZdDfqKZPUq&amp;width=100%&amp;height=345&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 </div>
    
 

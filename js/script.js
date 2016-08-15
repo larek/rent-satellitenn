@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $(".btn-rules").click(function(){
+        $(".modalRules").modal();
+    });
+
 
     var boxes;
     var places;
@@ -99,7 +103,8 @@ $(document).ready(function() {
     }
 
     $(".btn-calc").click(function checkCalculation() {
-        if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "") {
+
+        if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "" && $(".checkRules").is(":checked")) {
             $(".resultCalculator").modal();
             var result = Calculate();
             $(".priceRent").html(result.priceRent + " руб.");
@@ -107,7 +112,7 @@ $(document).ready(function() {
             $(".activePlace").html(places[active_place]['name']);
             $(".rangeDay").html(result.rangeDay);
         } else {
-            $(".alertContent").html('Чтобы узнать стоимость и забронировать автобокс, выберете необходимый бокс, место установки и даты аренды');
+            $(".alertContent").html('Чтобы узнать стоимость и забронировать автобокс, выберете необходимый бокс, место установки и даты аренды и согласитесь с условиями аренды');
             $(".modalAlert").modal();
 
         }
@@ -126,7 +131,7 @@ $(document).ready(function() {
                 console.log(data);
                 if (data == "1") {
                     $(".resultCalculator").modal('hide');
-                    $(".alertContent").html('Заявка на бронирование успешно принята. В ближайшее время мы с вами свяжемся');
+                    $(".alertContent").html('Заявка на бронирование принята. В ближайшее время наш сотрудник свяжется с Вами для уточнения деталей и подтверждения брони');
                     $(".modalAlert").modal();
                 }
             });

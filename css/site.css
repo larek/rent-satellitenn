@@ -113,9 +113,36 @@ a.desc:after {
     font-size: 20px;
 }
 .btn-rent, .btn-calc{
-    width:100%;
+    /*width:100%;*/
 }
 
 .priceRent{
     font-size: 30px;
+}
+
+.alert-warning, .alert-info{
+    color:#000;
+}
+
+.alert-info-satellite{
+    font-size: 20px;
+    padding: 7px 20px;
+}
+
+.alert-info-empty{
+    padding:5px 0px;
+}
+
+.alert-warning-satellite{
+    background-color: #f0f0ef;
+    border-color: #ccc;
+        height: 313px;
+    margin-top: 28px;
+    overflow-y: scroll;
+}
+
+.btn-rules{
+    font-weight: normal;
+    color: #337ab7;
+    border-radius: 0;
 }
