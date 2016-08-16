@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $(".btn-rules").click(function(){
+    $(".btn-rules").click(function() {
         $(".modalRules").modal();
     });
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $.post('/site/getcalc').done(function(res) {
         dataCalc = $.parseJSON(res);
-         boxes = {
+        boxes = {
             400: {
                 'name': 'Satellite 400',
                 1: dataCalc['1']['value'],
@@ -31,7 +31,7 @@ $(document).ready(function() {
             },
         }
 
-         places = {
+        places = {
             1: {
                 'name': 'Отсутствуют',
                 1: dataCalc['10']['value'],
@@ -45,7 +45,7 @@ $(document).ready(function() {
         }
     });
 
-  
+
 
     var active_box = null;
     var active_place = null;
@@ -177,6 +177,39 @@ $(document).ready(function() {
         return data;
     }
 
+
+    // Owl Carousel
+    var owl = $("#owl-demo");
+
+    owl.owlCarousel({
+        items: 5, //10 items above 1000px browser width
+        itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+        itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+        itemsTablet: [600, 2], //2 items between 600 and 0
+        itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+        scrollPerPage: true,
+        // Navigation
+        navigation: false,
+        navigationText: ["prev", "next"],
+        rewindNav: true,
+        scrollPerPage: false,
+        autoPlay: 1000
+    });
+
+    // Custom Navigation Events
+    $(".next").click(function() {
+        owl.trigger('owl.next');
+    })
+    $(".prev").click(function() {
+        owl.trigger('owl.prev');
+    })
+    $(".play").click(function() {
+        owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
+    })
+    $(".stop").click(function() {
+            owl.trigger('owl.stop');
+        })
+        // End Owl Carousel
 
 
 });

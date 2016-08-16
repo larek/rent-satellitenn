@@ -28,7 +28,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-md-6">
         <div class="fotorama"
              data-width="100%"
-             data-ratio="600/400">
+             data-ratio="600/400"
+             data-transition='crossfade'
+             data-autoplay='2000'
+             data-nav='false'
+             data-arrows='false'>
           <img src="/images/1 (3).JPG">
           <img src="/images/1 (7).JPG">
           <img src="/images/1 (9).JPG">
@@ -37,35 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
           <img src="/images/1 (22).JPG">
           <img src="/images/1 (24).JPG">
           <img src="/images/1 (27).JPG">
-          <!-- <img src="/images/2 (1).jpg">
-          <img src="/images/2 (3).jpg">
-          <img src="/images/2 (4).jpg">
-          <img src="/images/2 (5).jpg">
-          <img src="/images/2 (6).jpg">
-          <img src="/images/2 (7).jpg">
-          <img src="/images/2 (8).jpg">
-          <img src="/images/2 (9).jpg">
-          <img src="/images/2 (10).jpg">
-          <img src="/images/2 (11).jpg">
-          <img src="/images/2 (12).jpg">
-          <img src="/images/2 (13).jpg">
-          <img src="/images/2 (14).jpg">
-          <img src="/images/2 (15).jpg">
-          <img src="/images/2 (16).jpg">
-          <img src="/images/2 (17).jpg">
-          <img src="/images/2 (18).jpg">
-          <img src="/images/2 (19).jpg">
-          <img src="/images/2 (20).jpg">
-          <img src="/images/2 (21).jpg">
-          <img src="/images/2 (22).jpg">
-          <img src="/images/2 (23).jpg">
-          <img src="/images/2 (24).jpg">
-          <img src="/images/2 (25).jpg">
-          <img src="/images/2 (26).jpg">
-          <img src="/images/2 (27).jpg">
-          <img src="/images/2 (28).jpg">
-          <img src="/images/2 (29).jpg">
-          <img src="/images/2 (30).jpg"> -->
+         
         </div>
     </div>
 <div class="col-md-6">
@@ -442,6 +418,49 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
     </div>
   </div>
+</div>
+
+<div class="row">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+
+  <div class="item"><img src="/images/2 (1).jpg"></div>
+  <div class="item"><img src="/images/2 (3).jpg"></div>
+  <div class="item"><img src="/images/2 (4).jpg"></div>
+  <div class="item"><img src="/images/2 (5).jpg"></div>
+  <div class="item"><img src="/images/2 (6).jpg"></div>
+  <div class="item"><img src="/images/2 (7).jpg"></div>
+  <div class="item"><img src="/images/2 (8).jpg"></div>
+  <div class="item"><img src="/images/2 (9).jpg"></div>
+  <div class="item"><img src="/images/2 (10).jpg"></div>
+  <div class="item"><img src="/images/2 (11).jpg"></div>
+  <div class="item"><img src="/images/2 (12).jpg"></div>
+  <div class="item"><img src="/images/2 (13).jpg"></div>
+  <div class="item"><img src="/images/2 (14).jpg"></div>
+  <div class="item"><img src="/images/2 (15).jpg"></div>
+  <div class="item"><img src="/images/2 (16).jpg"></div>
+  <div class="item"><img src="/images/2 (17).jpg"></div>
+  <div class="item"><img src="/images/2 (18).jpg"></div>
+  <div class="item"><img src="/images/2 (19).jpg"></div>
+  <div class="item"><img src="/images/2 (20).jpg"></div>
+  <div class="item"><img src="/images/2 (21).jpg"></div>
+  <div class="item"><img src="/images/2 (22).jpg"></div>
+  <div class="item"><img src="/images/2 (23).jpg"></div>
+  <div class="item"><img src="/images/2 (24).jpg"></div>
+  <div class="item"><img src="/images/2 (25).jpg"></div>
+  <div class="item"><img src="/images/2 (26).jpg"></div>
+  <div class="item"><img src="/images/2 (27).jpg"></div>
+  <div class="item"><img src="/images/2 (28).jpg"></div>
+  <div class="item"><img src="/images/2 (29).jpg"></div>
+  <div class="item"><img src="/images/2 (30).jpg"></div>
+  
+</div>
+<!--  
+<div class="customNavigation">
+  <a class="btn prev">Previous</a>
+  <a class="btn next">Next</a>
+  <a class="btn play">Autoplay</a>
+  <a class="btn stop">Stop</a>
+</div> -->
 </div>
 
 <div class="row">
