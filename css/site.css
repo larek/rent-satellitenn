@@ -147,6 +147,10 @@ a.desc:after {
     border-radius: 0;
 }
 
+.datepicker-inline {
+    margin: 0px auto;
+}
+
 /*Owl Carousel*/
 
 #owl-demo .item{

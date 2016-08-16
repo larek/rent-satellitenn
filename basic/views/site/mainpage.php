@@ -224,22 +224,11 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <div class="row">
         
+<div id="datepicker2" class='col-md-4 col-md-offset-4'></div>
+<input type="hidden" id="my_hidden_input">
                 
-
-                <div class="input-daterange input-group" id="datepicker">
-                    <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> Начало аренды</span>
-                            <input type="text" class="input-sm form-control date-to" name="start" placeholder='' />
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> До</span>
-                            <input type="text" class="input-sm form-control date-from" name="end" placeholder="Конец аренды" />
-                        </div>
-                    </div>
-                </div>
+                
+                
         
 
     </div>
