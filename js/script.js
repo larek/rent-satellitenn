@@ -47,12 +47,12 @@ $(document).ready(function() {
 
         places = {
             1: {
-                'name': 'Отсутствуют',
+                'name': 'Да, мне нужны поперечины',
                 1: dataCalc['10']['value'],
                 2: dataCalc['11']['value']
             },
             2: {
-                'name': 'Присутствуют',
+                'name': 'Нет, мне не нужны поперечины',
                 1: dataCalc['12']['value'],
                 2: dataCalc['13']['value']
             }

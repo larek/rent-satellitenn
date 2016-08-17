@@ -94,7 +94,7 @@ class SiteController extends Controller
             ->setSubject('Заказ с сайта. '.date("Y-m-d H:i:s"))
             ->setHtmlBody('<h2>Информация о заказе</h2>
     <p>Satellite '. $content["active_box"].'</p>
-    <p>Рейлинги - '. $content["active_placeName"].'</p>
+    <p>Необходимость аренды поперечин - '. $content["active_placeName"].'</p>
     <p>Срок аренды - '. $content["rangeDay"].'</p>
     <p>Даты аренды - '. $content["rangeDates"].'</p>
     <p>Стоимость аренды - '. $content["priceRent"].'</p>
