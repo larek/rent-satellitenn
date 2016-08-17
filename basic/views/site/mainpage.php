@@ -8,6 +8,9 @@ $this->title = 'Прокат автомобильных боксов и бага
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
+<div class="alert alert-danger">
+    Уважаемые посетители! Сайт работает в тестовом режиме и имеет ограниченный функционал. Всю необходимую информацию можно получить по телефону 424-50-24. Приносим извинения за доставленные неудобства
+</div>
     <div class="col-md-6 text-center">    
         <h1><?= $this->title?></h1>
     </div>
@@ -455,6 +458,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yKVgzvBaUNWFbjVtEyruD-ZdDfqKZPUq&amp;width=100%&amp;height=345&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 </div>
-   
+   <div class='row text-center'>
+       <a href='http://satellitenn.ru' class="btn btn-default">Хочу купитьышеу</a>
+   </div>
 
     
