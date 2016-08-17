@@ -459,7 +459,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yKVgzvBaUNWFbjVtEyruD-ZdDfqKZPUq&amp;width=100%&amp;height=345&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 </div>
    <div class='row text-center'>
-       <a href='http://satellitenn.ru' class="btn btn-default">Хочу купитьышеу</a>
+       <a href='http://satellitenn.ru' class="btn btn-default">Хочу купить</a>
    </div>
 
     
