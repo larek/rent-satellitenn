@@ -225,5 +225,7 @@ $(document).ready(function() {
         })
         // End Owl Carousel
 
+    $(".fancybox").fancybox();
+
 
 });

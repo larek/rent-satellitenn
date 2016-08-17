@@ -164,7 +164,7 @@ a.desc:after {
   text-align: center;
 }
 
-#owl-demo .item>img{
+#owl-demo .item>a>img{
 width:100%;
 }
 

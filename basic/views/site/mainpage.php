@@ -427,35 +427,35 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
     <div id="owl-demo" class="owl-carousel owl-theme">
 
-  <div class="item"><img src="/images/2 (1).jpg"></div>
-  <div class="item"><img src="/images/2 (3).jpg"></div>
-  <div class="item"><img src="/images/2 (4).jpg"></div>
-  <div class="item"><img src="/images/2 (5).jpg"></div>
-  <div class="item"><img src="/images/2 (6).jpg"></div>
-  <div class="item"><img src="/images/2 (7).jpg"></div>
-  <div class="item"><img src="/images/2 (8).jpg"></div>
-  <div class="item"><img src="/images/2 (9).jpg"></div>
-  <div class="item"><img src="/images/2 (10).jpg"></div>
-  <div class="item"><img src="/images/2 (11).jpg"></div>
-  <div class="item"><img src="/images/2 (12).jpg"></div>
-  <div class="item"><img src="/images/2 (13).jpg"></div>
-  <div class="item"><img src="/images/2 (14).jpg"></div>
-  <div class="item"><img src="/images/2 (15).jpg"></div>
-  <div class="item"><img src="/images/2 (16).jpg"></div>
-  <div class="item"><img src="/images/2 (17).jpg"></div>
-  <div class="item"><img src="/images/2 (18).jpg"></div>
-  <div class="item"><img src="/images/2 (19).jpg"></div>
-  <div class="item"><img src="/images/2 (20).jpg"></div>
-  <div class="item"><img src="/images/2 (21).jpg"></div>
-  <div class="item"><img src="/images/2 (22).jpg"></div>
-  <div class="item"><img src="/images/2 (23).jpg"></div>
-  <div class="item"><img src="/images/2 (24).jpg"></div>
-  <div class="item"><img src="/images/2 (25).jpg"></div>
-  <div class="item"><img src="/images/2 (26).jpg"></div>
-  <div class="item"><img src="/images/2 (27).jpg"></div>
-  <div class="item"><img src="/images/2 (28).jpg"></div>
-  <div class="item"><img src="/images/2 (29).jpg"></div>
-  <div class="item"><img src="/images/2 (30).jpg"></div>
+  <div class="item"><a href="/images/2 (1).jpg" class='fancybox' rel='gallery'><img src="/images/2 (1).jpg"></a></div>
+  <div class="item"><a href="/images/2 (3).jpg" class='fancybox' rel='gallery'><img src="/images/2 (3).jpg"></a></div>
+  <div class="item"><a href="/images/2 (4).jpg" class='fancybox' rel='gallery'><img src="/images/2 (4).jpg"></a></div>
+  <div class="item"><a href="/images/2 (5).jpg" class='fancybox' rel='gallery'><img src="/images/2 (5).jpg"></a></div>
+  <div class="item"><a href="/images/2 (6).jpg" class='fancybox' rel='gallery'><img src="/images/2 (6).jpg"></a></div>
+  <div class="item"><a href="/images/2 (7).jpg" class='fancybox' rel='gallery'><img src="/images/2 (7).jpg"></a></div>
+  <div class="item"><a href="/images/2 (8).jpg" class='fancybox' rel='gallery'><img src="/images/2 (8).jpg"></a></div>
+  <div class="item"><a href="/images/2 (9).jpg" class='fancybox' rel='gallery'><img src="/images/2 (9).jpg"></a></div>
+  <div class="item"><a href="/images/2 (10).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (10).jpg"></a></div>
+  <div class="item"><a href="/images/2 (11).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (11).jpg"></a></div>
+  <div class="item"><a href="/images/2 (12).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (12).jpg"></a></div>
+  <div class="item"><a href="/images/2 (13).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (13).jpg"></a></div>
+  <div class="item"><a href="/images/2 (14).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (14).jpg"></a></div>
+  <div class="item"><a href="/images/2 (15).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (15).jpg"></a></div>
+  <div class="item"><a href="/images/2 (16).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (16).jpg"></a></div>
+  <div class="item"><a href="/images/2 (17).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (17).jpg"></a></div>
+  <div class="item"><a href="/images/2 (18).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (18).jpg"></a></div>
+  <div class="item"><a href="/images/2 (19).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (19).jpg"></a></div>
+  <div class="item"><a href="/images/2 (20).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (20).jpg"></a></div>
+  <div class="item"><a href="/images/2 (21).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (21).jpg"></a></div>
+  <div class="item"><a href="/images/2 (22).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (22).jpg"></a></div>
+  <div class="item"><a href="/images/2 (23).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (23).jpg"></a></div>
+  <div class="item"><a href="/images/2 (24).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (24).jpg"></a></div>
+  <div class="item"><a href="/images/2 (25).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (25).jpg"></a></div>
+  <div class="item"><a href="/images/2 (26).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (26).jpg"></a></div>
+  <div class="item"><a href="/images/2 (27).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (27).jpg"></a></div>
+  <div class="item"><a href="/images/2 (28).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (28).jpg"></a></div>
+  <div class="item"><a href="/images/2 (29).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (29).jpg"></a></div>
+  <div class="item"><a href="/images/2 (30).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (30).jpg"></a></div>
   
 </div>
 <!--  
