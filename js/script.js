@@ -118,7 +118,7 @@ $(document).ready(function() {
 
     $(".btn-calc").click(function checkCalculation() {
 
-        if (active_box !== null && active_place !== null && $('#my_hidden_input').val().split(',').length == 2 && $(".checkRules").is(":checked")) {
+        if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "" && $(".checkRules").is(":checked")) {
             $(".resultCalculator").modal();
             var result = Calculate();
             $(".priceRent").html(result.priceRent + " руб.");
@@ -156,8 +156,8 @@ $(document).ready(function() {
     });
 
     function Calculate() {
-        var dateTo = toDate($('#my_hidden_input').val().split(',')[0]);
-        var dateFrom = toDate($('#my_hidden_input').val().split(',')[1]);
+        var dateTo = toDate($(".date-to").val());
+        var dateFrom = toDate($(".date-from").val());
         var range = dateFrom - dateTo;
         var rangeDay = range / (1000 * 60 * 60 * 24);
 
