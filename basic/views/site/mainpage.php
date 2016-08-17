@@ -229,7 +229,7 @@ $this->params['breadcrumbs'][] = $this->title;
         
 
                 
-                <div class="input-daterange input-group" id="datepicker">
+                <div class="input-daterange" id="datepicker">
                     <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-12">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> От</span>
