@@ -207,7 +207,7 @@ $(document).ready(function() {
         navigationText: ["prev", "next"],
         rewindNav: true,
         scrollPerPage: false,
-        autoPlay: 1000
+        autoPlay: 3000
     });
 
     // Custom Navigation Events
