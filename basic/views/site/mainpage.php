@@ -196,7 +196,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
 
     <div class="alert alert-info alert-info-satellite">
-    	2. Присутствуют ли у вас поперечины?
+    	2. Необходимость аренды поперечин?
     </div>
 
     <div class="row">
@@ -205,7 +205,7 @@ $this->params['breadcrumbs'][] = $this->title;
     			<img src="/images/bez_pop.jpg" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
-    			<h4>Отсутствуют</h4>
+    			<h4>Да, мне нужны поперечины</h4>
     			<span class='btn btn-default btn-sm btn-place' id='1'>Выбрать</span>
     		</div>
     	</div>
@@ -214,7 +214,7 @@ $this->params['breadcrumbs'][] = $this->title;
     			<img src="/images/pop.jpg" class='img-responsive' alt="">
     		</div>
     		<div class="col-md-8 col-sm-8 col-xs-8">
-    			<h4>Присутствуют</h4>
+    			<h4>Нет, мне не нужны поперечины</h4>
     			<span class='btn btn-default btn-sm btn-place' id='2'>Выбрать</span>
     		</div>
     	</div>
