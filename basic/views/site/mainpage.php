@@ -20,11 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
             <br>
             <span><i class="fa fa-mobile-phone" aria-hidden="true"></i> +7-910-385-21-44</span>
             <br>
-            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Нижний Новгород</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Нижний Новгород <br>ул. Касьянова, д. 6</span>
         </div>
     </div>
 </div>
-
+<br>
 <div class="row">
 <div class="alert alert-info alert-info-empty"></div>
 
@@ -93,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
-    <div class='alert alert-info alert-info-satellite'>1. Выберете автобокс</div>
+    <div class='alert alert-info alert-info-satellite'>1. Выберите автобокс</div>
     <div class="row">
 
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -291,7 +291,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <td><span class="activeBox"></span></td>
                 </tr>
                 <tr>
-                    <td>Место установки</td>
+                    <td>Прокат поперечин</td>
                     <td><span class="activePlace"></span></td>
                 </tr>
                 <tr>
