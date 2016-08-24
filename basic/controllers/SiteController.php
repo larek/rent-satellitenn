@@ -10,6 +10,7 @@ use yii\helpers\ArrayHelper;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Calc;
+use app\modules\admin\models\Content;
 
 class SiteController extends Controller
 {
@@ -62,7 +63,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('mainpage');
+        $model = Content::findOne(1);
+        return $this->render('mainpage',[
+                'model' => $model,
+            ]);
     }
 
     public function actionGetcalc(){

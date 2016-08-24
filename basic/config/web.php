@@ -61,6 +61,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'admin/content/<id>' => 'admin/content/update'
             ],
         ],
         

@@ -38,6 +38,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Главная', 'url' => ['/admin/default/index']],
             ['label' => 'Калькулятор', 'url' => ['/admin/calc/index']],
+            ['label' => 'Контент', 'url' => ['/admin/content/update', 'id' => 1]],
             // ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
