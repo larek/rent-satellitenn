@@ -24,37 +24,38 @@ $(document).ready(function() {
 
     $.post('/site/getcalc').done(function(res) {
         dataCalc = $.parseJSON(res);
+        console.log(dataCalc);
         boxes = {
             400: {
                 'name': 'Satellite 400',
-                1: dataCalc['1']['value'],
-                2: dataCalc['2']['value'],
-                3: dataCalc['3']['value']
+                1: dataCalc['G'],
+                2: dataCalc['H'],
+                3: dataCalc['I']
             },
             460: {
                 'name': 'Satellite 460',
-                1: dataCalc['4']['value'],
-                2: dataCalc['5']['value'],
-                3: dataCalc['6']['value']
+                1: dataCalc['A'],
+                2: dataCalc['B'],
+                3: dataCalc['C']
             },
             520: {
                 'name': 'Satellite 520',
-                1: dataCalc['7']['value'],
-                2: dataCalc['8']['value'],
-                3: dataCalc['9']['value']
+                1: dataCalc['D'],
+                2: dataCalc['E'],
+                3: dataCalc['F']
             },
         }
 
         places = {
             1: {
                 'name': 'Да, мне нужны поперечины',
-                1: dataCalc['10']['value'],
-                2: dataCalc['11']['value']
+                1: dataCalc['J'],
+                2: dataCalc['K']
             },
             2: {
                 'name': 'Нет, мне не нужны поперечины',
-                1: dataCalc['12']['value'],
-                2: dataCalc['13']['value']
+                1: dataCalc['L'],
+                2: dataCalc['M']
             }
         }
     });

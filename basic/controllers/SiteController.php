@@ -11,6 +11,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Calc;
 use app\modules\admin\models\Content;
+use app\modules\admin\models\Calcdata;
 
 class SiteController extends Controller
 {
@@ -70,12 +71,26 @@ class SiteController extends Controller
     }
 
     public function actionGetcalc(){
-        $model = Calc::find()->all();
-        $data = [];
-        foreach ($model as $key => $value) {
-            $data[$value->id]['title']  = $value->title;
-            $data[$value->id]['value']  = $value->value;
-        }
+        $model = Calcdata::findOne(1);
+        $data = [
+            'A' => $model->a,
+            'B' => $model->b,
+            'C' => $model->c,
+            'D' => $model->d,
+            'E' => $model->e,
+            'F' => $model->f,
+            'G' => $model->g,
+            'H' => $model->h,
+            'I' => $model->i,
+            'J' => $model->j,
+            'K' => $model->k,
+            'L' => $model->l,
+            'M' => $model->m
+        ];
+        // foreach ($model as $key => $value) {
+        //     $data[$value->id]['title']  = $value->title;
+        //     $data[$value->id]['value']  = $value->value;
+        // }
         echo json_encode($data, JSON_UNESCAPED_UNICODE);
     }
 

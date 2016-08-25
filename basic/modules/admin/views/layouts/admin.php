@@ -37,7 +37,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/admin/default/index']],
-            ['label' => 'Калькулятор', 'url' => ['/admin/calc/index']],
+            ['label' => 'Калькулятор', 'url' => ['/admin/calcdata/update', 'id' => 1]],
             ['label' => 'Контент', 'url' => ['/admin/content/update', 'id' => 1]],
             // ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
