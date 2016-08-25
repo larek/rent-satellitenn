@@ -16,6 +16,42 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `calcdata`
+--
+
+DROP TABLE IF EXISTS `calcdata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `calcdata` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `a` int(11) NOT NULL,
+  `b` int(11) NOT NULL,
+  `c` int(11) NOT NULL,
+  `d` int(11) NOT NULL,
+  `e` int(11) NOT NULL,
+  `f` int(11) NOT NULL,
+  `g` int(11) NOT NULL,
+  `h` int(11) NOT NULL,
+  `i` int(11) NOT NULL,
+  `j` int(11) NOT NULL,
+  `k` int(11) NOT NULL,
+  `l` int(11) NOT NULL,
+  `m` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `calcdata`
+--
+
+LOCK TABLES `calcdata` WRITE;
+/*!40000 ALTER TABLE `calcdata` DISABLE KEYS */;
+INSERT INTO `calcdata` VALUES (1,1000,200,150,1250,250,200,1000,200,150,100,50,150,100);
+/*!40000 ALTER TABLE `calcdata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `calculator`
 --
 
@@ -79,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-24 15:21:23
+-- Dump completed on 2016-08-25 11:52:04
