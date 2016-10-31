@@ -35,14 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
              data-autoplay='2000'
              data-nav='false'
              data-arrows='false'>
-          <img src="/images/1 (3).JPG">
-          <img src="/images/1 (7).JPG">
-          <img src="/images/1 (9).JPG">
-          <img src="/images/1 (14).JPG">
-          <img src="/images/1 (18).JPG">
-          <img src="/images/1 (22).JPG">
-          <img src="/images/1 (24).JPG">
-          <img src="/images/1 (27).JPG">
+          <img src="/images/1-2 (3).JPG">
+          <img src="/images/1-2 (7).JPG">
+          <img src="/images/1-2 (9).JPG">
+          <img src="/images/1-2 (14).JPG">
+          <img src="/images/1-2 (18).JPG">
+          <img src="/images/1-2 (22).JPG">
+          <img src="/images/1-2 (24).JPG">
+          <img src="/images/1-2 (27).JPG">
          
         </div>
     </div>
@@ -396,54 +396,11 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <div class="row">
-    <div id="owl-demo" class="owl-carousel owl-theme">
-
-  <div class="item"><a href="/images/2 (1).jpg" class='fancybox' rel='gallery'><img src="/images/2 (1).jpg"></a></div>
-  <div class="item"><a href="/images/2 (3).jpg" class='fancybox' rel='gallery'><img src="/images/2 (3).jpg"></a></div>
-  <div class="item"><a href="/images/2 (4).jpg" class='fancybox' rel='gallery'><img src="/images/2 (4).jpg"></a></div>
-  <div class="item"><a href="/images/2 (5).jpg" class='fancybox' rel='gallery'><img src="/images/2 (5).jpg"></a></div>
-  <div class="item"><a href="/images/2 (6).jpg" class='fancybox' rel='gallery'><img src="/images/2 (6).jpg"></a></div>
-  <div class="item"><a href="/images/2 (7).jpg" class='fancybox' rel='gallery'><img src="/images/2 (7).jpg"></a></div>
-  <div class="item"><a href="/images/2 (8).jpg" class='fancybox' rel='gallery'><img src="/images/2 (8).jpg"></a></div>
-  <div class="item"><a href="/images/2 (9).jpg" class='fancybox' rel='gallery'><img src="/images/2 (9).jpg"></a></div>
-  <div class="item"><a href="/images/2 (10).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (10).jpg"></a></div>
-  <div class="item"><a href="/images/2 (11).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (11).jpg"></a></div>
-  <div class="item"><a href="/images/2 (12).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (12).jpg"></a></div>
-  <div class="item"><a href="/images/2 (13).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (13).jpg"></a></div>
-  <div class="item"><a href="/images/2 (14).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (14).jpg"></a></div>
-  <div class="item"><a href="/images/2 (15).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (15).jpg"></a></div>
-  <div class="item"><a href="/images/2 (16).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (16).jpg"></a></div>
-  <div class="item"><a href="/images/2 (17).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (17).jpg"></a></div>
-  <div class="item"><a href="/images/2 (18).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (18).jpg"></a></div>
-  <div class="item"><a href="/images/2 (19).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (19).jpg"></a></div>
-  <div class="item"><a href="/images/2 (20).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (20).jpg"></a></div>
-  <div class="item"><a href="/images/2 (21).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (21).jpg"></a></div>
-  <div class="item"><a href="/images/2 (22).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (22).jpg"></a></div>
-  <div class="item"><a href="/images/2 (23).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (23).jpg"></a></div>
-  <div class="item"><a href="/images/2 (24).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (24).jpg"></a></div>
-  <div class="item"><a href="/images/2 (25).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (25).jpg"></a></div>
-  <div class="item"><a href="/images/2 (26).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (26).jpg"></a></div>
-  <div class="item"><a href="/images/2 (27).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (27).jpg"></a></div>
-  <div class="item"><a href="/images/2 (28).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (28).jpg"></a></div>
-  <div class="item"><a href="/images/2 (29).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (29).jpg"></a></div>
-  <div class="item"><a href="/images/2 (30).jpg" class='fanycbox' rel='gallery'><img src="/images/2 (30).jpg"></a></div>
-  
-</div>
-<!--  
-<div class="customNavigation">
-  <a class="btn prev">Previous</a>
-  <a class="btn next">Next</a>
-  <a class="btn play">Autoplay</a>
-  <a class="btn stop">Stop</a>
-</div> -->
-</div>
-
-<div class="row">
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yKVgzvBaUNWFbjVtEyruD-ZdDfqKZPUq&amp;width=100%&amp;height=345&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 </div>
 <br><br>
    <div class='row text-center'>
-       <a href='http://satellitenn.ru' class="btn btn-default">Хочу купить</a>
+       <a href='http://satellitenn.store' class="btn btn-default">Хочу купить</a>
    </div>
 
     
