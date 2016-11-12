@@ -35,14 +35,12 @@ $this->params['breadcrumbs'][] = $this->title;
              data-autoplay='2000'
              data-nav='false'
              data-arrows='false'>
-          <img src="/images/1-2 (3).JPG">
-          <img src="/images/1-2 (7).JPG">
-          <img src="/images/1-2 (9).JPG">
-          <img src="/images/1-2 (14).JPG">
-          <img src="/images/1-2 (18).JPG">
-          <img src="/images/1-2 (22).JPG">
-          <img src="/images/1-2 (24).JPG">
-          <img src="/images/1-2 (27).JPG">
+             <?
+             foreach($slides as $item){
+                echo Html::img("/uploads/600x400/".$item->image);
+             }
+             ?>
+         
          
         </div>
     </div>

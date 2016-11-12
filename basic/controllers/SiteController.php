@@ -12,6 +12,7 @@ use app\models\ContactForm;
 use app\models\Calc;
 use app\modules\admin\models\Content;
 use app\modules\admin\models\Calcdata;
+use app\modules\admin\models\Slider;
 
 class SiteController extends Controller
 {
@@ -65,8 +66,10 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = Content::findOne(1);
+        $slides = Slider::find()->orderBy(['order_id' => SORT_ASC])->all();
         return $this->render('mainpage',[
                 'model' => $model,
+                'slides' => $slides
             ]);
     }
 
