@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
              data-width="100%"
              data-ratio="600/400"
              data-transition='crossfade'
-             data-autoplay='2000'
+             data-autoplay='7000'
              data-nav='false'
              data-arrows='false'>
              <?
