@@ -31,7 +31,7 @@ class AppAsset extends AssetBundle
         'bower_components/fotorama/fotorama.js',
         'bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js',
         'bower_components/fancybox/source/jquery.fancybox.js',
-        'js/script.js'
+        'js/script.js?v=2.0.1'
 
     ];
     public $depends = [
