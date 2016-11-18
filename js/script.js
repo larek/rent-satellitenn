@@ -44,6 +44,12 @@ $(document).ready(function() {
                 2: dataCalc['E'],
                 3: dataCalc['F']
             },
+            900: {
+                'name': 'Thule Atlantis 900',
+                1: dataCalc['N'],
+                2: dataCalc['O'],
+                3: dataCalc['P']
+            }
         }
 
         places = {

@@ -77,7 +77,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class='alert alert-info alert-info-satellite'>1. Выберите автобокс</div>
     <div class="row">
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-400 color-img img-responsive' src="/images/prokat400.jpg" alt="...">
@@ -109,7 +109,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-460 color-img img-responsive' src="/images/prokat460.jpg" alt="...">
@@ -141,7 +141,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <div class="color-img-wrapper">
                     <img class='color-img-520 color-img img-responsive' src="/images/prokat520.jpg" alt="...">
@@ -172,6 +172,39 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
         </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                <div class="color-img-wrapper">
+                    <img class='color-img-900 color-img img-responsive' src="/images/prokat900.jpg" alt="...">
+                </div>
+                <div class="caption">
+                    <h3>Автобокс "Thule Atlantis 900"</h3>
+                    <table class="table table-striped">
+
+                        <tr>
+                            <td>Объем</td>
+                            <td>650 литров</td>
+                        </tr>
+                        <tr>
+                            <td>Габариты</td>
+                            <td>235x90x46</td>
+                        </tr>
+                        <tr>
+                            <td>Масса</td>
+                            <td>26 кг</td>
+                        </tr>
+                        <tr>
+                            <td>Грузоподъемность</td>
+                            <td>до 100 кг.</td>
+                        </tr>
+                    </table>
+
+                    <p><span class="btn btn-default btn-color" id='900' role="button">Выбрать</span></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     

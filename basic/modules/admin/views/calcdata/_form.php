@@ -39,6 +39,9 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'l')->textInput() ?>
 
     <?= $form->field($model, 'm')->textInput() ?>
+    <?= $form->field($model, 'n')->textInput() ?>
+    <?= $form->field($model, 'o')->textInput() ?>
+    <?= $form->field($model, 'p')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

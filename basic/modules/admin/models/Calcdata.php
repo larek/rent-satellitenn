@@ -21,6 +21,9 @@ use Yii;
  * @property integer $k
  * @property integer $l
  * @property integer $m
+ * @property integer $n
+ * @property integer $o
+ * @property integer $p
  */
 class Calcdata extends \yii\db\ActiveRecord
 {
@@ -39,7 +42,7 @@ class Calcdata extends \yii\db\ActiveRecord
     {
         return [
             [['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'], 'required'],
-            [['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'], 'integer']
+            [['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n','o','p'], 'integer']
         ];
     }
 
@@ -63,6 +66,10 @@ class Calcdata extends \yii\db\ActiveRecord
             'k' => 'поперечины отсутствуют более 30 суток',
             'l' => 'поперечины присутствуют до 30 суток',
             'm' => 'поперечины присутствуют более 30 суток',
+            'n' => 'Thule Atlantis 900 до 5 суток',
+            'o' => 'Thule Atlantis 900 от 5 до 15 суток',
+            'p' => 'Thule Atlantis 900 более 15 суток'
+            
         ];
     }
 }

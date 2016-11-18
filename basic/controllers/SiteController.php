@@ -88,7 +88,10 @@ class SiteController extends Controller
             'J' => $model->j,
             'K' => $model->k,
             'L' => $model->l,
-            'M' => $model->m
+            'M' => $model->m,
+            'N' => $model->n,
+            'O' => $model->o,
+            'P' => $model->p
         ];
         // foreach ($model as $key => $value) {
         //     $data[$value->id]['title']  = $value->title;
