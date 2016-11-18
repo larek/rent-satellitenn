@@ -100,7 +100,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                         <tr>
                             <td>Грузоподъемность</td>
-                            <td>до 50 кг.</td>
+                            <td>до 60 кг.</td>
                         </tr>
                     </table>
 
@@ -164,7 +164,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                         <tr>
                             <td>Грузоподъемность</td>
-                            <td>до 80 кг.</td>
+                            <td>до 60 кг.</td>
                         </tr>
                     </table>
 
@@ -196,7 +196,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                         <tr>
                             <td>Грузоподъемность</td>
-                            <td>до 100 кг.</td>
+                            <td>до 60 кг.</td>
                         </tr>
                     </table>
 
