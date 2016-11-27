@@ -207,6 +207,29 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </div>
 
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Дополнительные аксессуары. Для уточнения наличия и стоимости аренды дополнительных аксессуаров, пожалуйста, свяжитесь с нашим специалистом по телефону.</div>
+      <div class="panel-body">
+        <? foreach($product as $item){
+
+        ?>
+        <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                <div class="color-img-wrapper">
+                    <img class='color-img-900 color-img img-responsive' src="/uploads/300x200/<?= $item->image?>" alt="...">
+                </div>
+                <div class="caption">
+                    <h5><?= $item->title?></h5>
+                </div>
+            </div>
+        </div>
+
+        <?
+        } ?>
+      </div>
+    </div>
+
     
 
     <div class="alert alert-info alert-info-satellite">
