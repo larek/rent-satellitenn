@@ -128,6 +128,7 @@ $(document).ready(function() {
         if (active_box !== null && active_place !== null && $(".date-to").val() != "" && $(".date-from").val() !== "" && $(".checkRules").is(":checked")) {
             $(".resultCalculator").modal();
             var result = Calculate();
+            console.log(result);
             $(".priceRent").html(result.priceRent + " руб.");
             $(".activeBox").html(boxes[active_box]['name']);
             $(".activePlace").html(places[active_place]['name']);
@@ -179,7 +180,15 @@ $(document).ready(function() {
 
         rangeDay < 31 ? placeCategory = 1 : placeCategory = 2;
 
-        priceBox = (priceCategory == 1 ? boxes[active_box][priceCategory] : boxes[active_box][priceCategory] * rangeDay);
+        // priceBox = (priceCategory == 1 ? boxes[active_box][priceCategory] : boxes[active_box][priceCategory] * rangeDay);
+
+        if(priceCategory == 1){
+            priceBox = boxes[active_box][priceCategory];
+        }else if(priceCategory == 2){
+            priceBox = boxes[active_box][priceCategory] * rangeDay;
+        }else{
+            priceBox = (boxes[active_box][2] * 15) + (boxes[active_box][3]*(rangeDay-15));
+        }
 
         pricePlace = places[active_place][placeCategory] * rangeDay;
 
